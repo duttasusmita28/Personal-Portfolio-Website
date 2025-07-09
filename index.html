@@ -19,19 +19,23 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">About</a></li>
-                    <li>Skills</li>
-                    <li>Certifications</li>
-                    <li>Achievements</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Certifications</a></li>
+                    <li><a href="/">Achievements</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></a></li>
                 </ul>
             </div>
         </nav>
         <section class="firstsection">
             <div class="leftsection">
-                <strong>Hi, I'm <span class="color">Susmita</span>
-                    <div>a Front-End Web Developer passionate about creating responsive, user-friendly websites. 
-                        I enjoy working with HTML, CSS, JavaScript and Bootstrap.</div>
+                <strong>Hi, Myself <span class="color">Susmita</span>
+                    <div>and I am a passionate <br></div>
+                        <span id="element"></span>
+                    <div class="button">
+                        <button class="btn">Download Resume</button>
+                        <button class="btn">View Github</button>
+                    </div>
                 </strong>
             </div>
             <div class="rightsection">
@@ -39,6 +43,13 @@
             </div>
         </section>
     </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer.', 'Web Developer.','Web Designer.'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>

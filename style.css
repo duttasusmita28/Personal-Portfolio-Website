@@ -27,6 +27,16 @@
             margin: 0 23px;
         }
 
+         nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+         nav ul li a:hover{
+            color: rgb(50, 226, 226);
+            font-size: 1.05rem;
+        }
+
         .left{
             font-size: 1.5rem;
         }
@@ -46,10 +56,32 @@
     font-size: 2rem;
   }
 
+  .leftsection .btn{
+    margin-top: 40px;
+    padding: 12px;
+    background-color: rgb(69, 236, 180);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+
+  .leftsection .btn:hover{
+    font-size: 1.3rem;
+  }
+
   .rightsection img{
     width: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
   }
 
   .color{
+    color: aquamarine;
+  }
+
+  #element{
     color: aquamarine;
   }
