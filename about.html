@@ -7,6 +7,8 @@
     <title>Susmita Dutta - Frontend Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,28 +31,59 @@
         </nav>
     </header>
 
-<!-- About Page -->
+    <!-- About Page -->
 
-<section class="aboutsection">
-            <div class="aboutleft">
-                <strong>Hi, Myself <span class="color">Susmita</span>
-                    <div>and I am a passionate <br></div>
-                    <span id="element"></span>
-                    <div class="button">
-                        <button class="btn">Download Resume</button>
-                        <button class="btn">Visit Github</button>
+    <section class="about">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="aboutme">About Me</h2>
+                <hr>
+                <div class="w-20 h-1 bg-portfolio-accent mx-auto rounded-full">
+                </div>
+            </div>
+            <div class="aboutsection">
+                <div class="leftabout">
+                    <p class="">I am a passionate Front-End Web Developer with a creative mind and a love for clean, 
+                        user-friendly designs. I specialize in HTML, CSS, JavaScript, bootstrap, and enjoy bringing ideas to life through 
+                        responsive and accessible websites.</p>
+                    <p class="">I am enthusiastic about learning, solving problems, and creating beautiful web experiences. 
+                        I'm open to freelance work, collaborations, and internship opportunities where I can grow and contribute 
+                        as a developer.</p>
+                </div>
+                <div class="rightabout">
+                    <div class="rounded-lg border text-card-foreground shadow-sm p-6 bg-portfolio-card-dark border-white/10">
+                        <div class="p-0">
+                            <h3 class="education">Education</h3>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-portfolio-accent pl-4 text-gray-300">
+                                    <div class="font-semibold">Master of Computer Applications (MCA)
+                                    </div>
+                                    <div class="text-sm opacity-75">Tripura University (A Central University) | 2023 -
+                                        2025</div>
+                                </div>
+                                <div class="border-l-4 border-portfolio-accent pl-4 text-gray-300">
+                                    <div class="font-semibold">Bachelor of Computer Application (BCA)</div>
+                                    <div class="text-sm opacity-75">Karimganj College | 2017 - 2021</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </strong>
-            </div>
-            <div class="aboutright">
-                <div class="education">
-                    <h3>Education</h3>
+                    <div>
+                        <div class="p-0">
+                            <h3 class="interest">Interests</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span>Frontend Development</span>
+                                <span>Full Stack Development</span>
+                                <span>Web/App Designing</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="interests">
-                    <h3>Interests</h3>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -59,6 +92,9 @@
             typeSpeed: 50,
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -85,3 +85,32 @@
  #element {
    color: aquamarine;
  }
+
+ .aboutsection{
+  display: flex;
+  justify-content: space-around;
+   margin: 80px 0;
+   align-items: center;
+ }
+
+ .leftabout{
+  font-size: 1.5rem;
+  width: 50%;
+ }
+
+ .rightabout{
+  width: 40%;
+ }
+
+ .education{
+  margin-top: 50px;
+ }
+
+ .interest{
+  margin-top: 20px;
+ }
+
+ hr{
+  color: aqua;
+  
+ }
