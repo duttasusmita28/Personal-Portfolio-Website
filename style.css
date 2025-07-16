@@ -78,7 +78,23 @@
  }
 
  .leftsection {
-   font-size: 2.5rem;
+   font-size: 2.7rem;
+ }
+
+ .leftsection p {
+   font-size: 1.1rem;
+ }
+
+ .highlight {
+  font-size: 1.4rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 7px;
+   height: 1.5cm;
+ }
+
+ .highlight #element{
+  font-size: 1.6rem;
  }
 
  .leftsection .btn {
@@ -473,7 +489,7 @@
    padding: 60px 20px;
    max-width: 1000px;
    margin: auto;
-  
+
  }
 
  .projects {
@@ -534,4 +550,108 @@
    font-weight: 500;
    letter-spacing: 0.3px;
    box-shadow: 0 2px 8px rgba(0, 224, 211, 0.4);
+ }
+
+ .contact {
+   color: white;
+   max-width: 1200px;
+   margin: 100px;
+   overflow-x: hidden;
+ }
+
+ .contact-heading {
+   text-align: center;
+   margin-bottom: 50px;
+ }
+
+ .contact-heading h1 {
+   font-size: 40px;
+   color: white;
+   margin-bottom: 15px;
+ }
+
+ .contact-heading p {
+   color: #cccccc;
+   font-size: 18px;
+   max-width: 700px;
+   margin: auto;
+ }
+
+ .contact-container {
+   display: flex;
+   justify-content: center;
+ }
+
+ .contact-card {
+   background-color: #1e1e2f;
+   border-radius: 12px;
+   padding: 40px;
+   max-width: 600px;
+   box-shadow: 0 10px 20px rgba(0, 224, 211, 0.08);
+ }
+
+ .contact-card h2 {
+   font-size: 24px;
+   color: #00e0d3;
+   margin-bottom: 20px;
+ }
+
+ .intro-text {
+   color: #ccc;
+   margin-bottom: 30px;
+   line-height: 1.6;
+ }
+
+ .contact-item {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 20px;
+   gap: 15px;
+ }
+
+ .contact-item .icon {
+   background-color: rgba(0, 224, 211, 0.1);
+   color: #00e0d3;
+   border-radius: 50%;
+   padding: 12px;
+   flex-shrink: 0;
+   font-size: 16px;
+ }
+
+ .info-text h3 {
+   color: white;
+   margin: 0;
+   font-size: 16px;
+ }
+
+ .info-text p {
+   margin: 2px 0 0;
+   color: #cccccc;
+   font-size: 14px;
+ }
+
+ .social-section {
+   margin-top: 40px;
+ }
+
+ .social-section h3 {
+   margin-bottom: 15px;
+   color: white;
+ }
+
+ .social-icons a {
+   display: inline-block;
+   background-color: rgba(0, 224, 211, 0.1);
+   color: #00e0d3;
+   margin-right: 10px;
+   padding: 10px;
+   border-radius: 50%;
+   font-size: 16px;
+   transition: 0.3s ease;
+   text-decoration: none;
+ }
+
+ .social-icons a:hover {
+   background-color: rgba(0, 224, 211, 0.2);
+   transform: translateY(-3px);
  }
