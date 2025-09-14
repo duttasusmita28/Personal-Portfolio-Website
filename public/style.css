@@ -282,15 +282,17 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 60px;
-   margin: 100px;
+   gap: 30px;
+   margin: 40px 20px;
  }
 
  .skill-card {
    background-color: #1e1e2f;
    padding: 30px 20px;
    border-radius: 12px;
-   width: 400px;
+   width: 100%;
+   max-width: 400px;
+   flex: 1 1 280px;
    transition: transform 0.3s ease;
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
  }
@@ -655,3 +657,145 @@
    background-color: rgba(0, 224, 211, 0.2);
    transform: translateY(-3px);
  }
+
+ /* ================= RESPONSIVE FIXES ================= */
+
+/* Tablets and below */
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .firstsection {
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 20px;
+  }
+
+  .firstsection > div {
+    width: 100%;
+  }
+
+  .aboutsection {
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 20px;
+  }
+
+  .leftabout, .rightabout {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+
+  .box1 {
+    margin: 40px 20px;
+  }
+
+  .achievements, .project, .contact {
+    margin: 60px 20px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .leftsection {
+    font-size: 1.8rem;
+  }
+
+  .highlight {
+    font-size: 1.1rem;
+  }
+
+  .leftsection .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .skill-card, .box2 {
+    width: 100%;
+  }
+
+  .projects h3 {
+    font-size: 1.2rem;
+  }
+
+  .projects p {
+    font-size: 0.9rem;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+}
+
+/* ================= NAVBAR FIX ================= */
+
+/* Desktop: show normal menu, hide hamburger */
+.hamburger {
+  display: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile: hide normal menu, show hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100; /* stays above everything */
+  }
+
+  .right {
+    display: none; /* hidden until hamburger clicked */
+    position: absolute;
+    top: 80px; /* just below nav bar */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(12, 12, 14); /* match nav bg */
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .right.active {
+    display: flex; /* shown when toggled */
+  }
+
+  .right ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

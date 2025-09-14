@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👩‍💻 Susmita Dutta - Frontend Developer Portfolio</title>
+    <title>Susmita Dutta - Frontend Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -18,6 +18,24 @@
     <header>
         <nav>
             <div class="left">Susmita Dutta</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="right" id="nav-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="certificates.html">Certifications</a></li>
+                    <li><a href="achievement.html">Achievements</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <nav>
+            <div class="left">Susmita Dutta</div>
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -29,15 +47,15 @@
                     <li><a href="contact.html">Contact</a></a></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <section class="firstsection">
             <div class="leftsection">
                 <strong>Hey I'm <span class="color">Susmita</span>
                     <div class="highlight">
-                    <h3>I am a passionate <br></h3> 
-                    <span id="element"></span>
+                        <h3>I am a passionate <br></h3>
+                        <span id="element"></span>
                     </div>
-                    <p>I build exceptional digital experiences that are fast, accessible, and visually appealing. 
+                    <p>I build exceptional digital experiences that are fast, accessible, and visually appealing.
                         Let's create something amazing together.</p>
                     <div class="button">
                         <a href="SusmitaDutta CV.pdf" target="_blank">
@@ -48,7 +66,7 @@
                 </strong>
             </div>
             <div class="rightsection">
-                <img src="Image/Profilephoto.jpg" alt="Profilephoto">
+                <img src="Image/Profilephoto.png" alt="Profilephoto">
             </div>
         </section>
     </header>
@@ -378,7 +396,7 @@
         </div>
     </section>
 
-   <section class="achievements">
+    <section class="achievements">
         <div class="">
             <div class="">
                 <h2 class="">🏆 Achievements</h2>
@@ -426,7 +444,7 @@
         </div>
     </section>
 
-     <section class="project">
+    <section class="project">
         <div>
             <h1 class="title">Projects</h1>
             <hr>
@@ -438,8 +456,10 @@
                 </div>
                 <h3 class="">E-Commerce Web Application</h3>
                 <div class="">
-                    <p class="">A full-stack platform for promoting Tripura’s handicrafts. It features admin product control, 
-                        secure user login, and an AI-powered recommendation system that suggests products from the nearest seller 
+                    <p class="">A full-stack platform for promoting Tripura’s handicrafts. It features admin product
+                        control,
+                        secure user login, and an AI-powered recommendation system that suggests products from the
+                        nearest seller
                         based on the user’s current location and product preferences.</p>
                     <div class=""><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python
                             Flask</span><span>MySQL</span><span>Weka</span>
@@ -453,10 +473,10 @@
                 </div>
                 <h3 class=""> Online Booking System for Hotel</h3>
                 <div class="">
-                    <p class="">A responsive hotel reservation system that allows users to register, log in, and 
+                    <p class="">A responsive hotel reservation system that allows users to register, log in, and
                         book rooms online with real-time availability updates.</p>
                     <div class=""><span>HTML</span><span>CSS</span><span>JavaScript</span>
-                            <span>MongoDB</span>
+                        <span>MongoDB</span>
                     </div>
                 </div>
             </div>
@@ -467,7 +487,8 @@
                 </div>
                 <h3 class="">Students Result Portal</h3>
                 <div class="">
-                    <p class="">A PHP-based result management system that allows students to check exam results online by 
+                    <p class="">A PHP-based result management system that allows students to check exam results online
+                        by
                         roll number or registration number and semester.</p>
                     <div class=""><span>HTML</span><span>CSS</span><span>PHP</span>
                     </div>
@@ -569,6 +590,25 @@
             typeSpeed: 50,
         });
     </script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            // Toggle between bars and X
+            const icon = hamburger.querySelector("i");
+            if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
